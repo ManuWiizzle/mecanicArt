@@ -1,0 +1,29 @@
+.background_homepage {
+ background-image: url("../images/mecanic.jpg");
+ height: 100vh;
+ width: 100%;
+ object-fit: cover;
+}
+
+.button{
+ -webkit-transition-duration: 0.4s;
+ transition-duration: 0.4s;
+ font-weight: bold;
+ margin-top: 80vh;
+ height: 3em;
+ width: 15em;
+ border:none;
+ border-radius: 100px;
+ background-color: $primary-color;
+ color:$black;
+}
+.circle {
+ padding: 16px;
+ text-align: center;
+ width: 130px;
+ height: 130px;
+ border-radius: 50%;
+ border: 2px solid $white;
+ position: relative;
+ line-height: 50px;
+}
