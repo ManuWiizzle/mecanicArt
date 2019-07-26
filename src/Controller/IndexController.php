@@ -6,15 +6,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class LoginController extends AbstractController
+class IndexController extends AbstractController
 {
 
     /**
-     * @Route("/login", name="login_index")
+     * @Route("/index", name="app_index")
      * @return Response
      */
     public function index(): Response
     {
-        return $this->render('login/login.html.twig');
+        return $this->render('home/index.html.twig');
     }
 }

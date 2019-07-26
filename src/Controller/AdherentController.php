@@ -20,7 +20,7 @@ class AdherentController extends AbstractController
      */
     public function index(AdherentRepository $adherentRepository): Response
     {
-        return $this->render('adherent/index.html.twig', [
+        return $this->render('adherent/welcome.html.twig', [
             'adherents' => $adherentRepository->findAll(),
         ]);
     }

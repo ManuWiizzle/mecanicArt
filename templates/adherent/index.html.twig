@@ -12,6 +12,8 @@
             <th>Mail</th>
             <th>Phone</th>
             <th>status</th>
+            <th>Prestations</th>
+            <th>Password</th>
             <th>actions</th>
         </tr>
         </thead>
@@ -24,8 +26,14 @@
                 {% for status in adherent.status %}
                     <td>{{ status.type}}</td>
                     {% else %}
-                    <td>rien</td>
+                    <td>_</td>
                 {%endfor%}
+                {% for prestations in adherent.prestations %}
+                    <td>{{ prestations.name}}</td>
+                {% else %}
+                    <td>_</td>
+                {%endfor%}
+                <td>{{ adherent.password }}</td>
                 <td>
                     <a href="{{ path('adherent_show', {'id': adherent.id}) }}">show</a>
                     <a href="{{ path('adherent_edit', {'id': adherent.id}) }}">edit</a>

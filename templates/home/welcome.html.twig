@@ -1,0 +1,24 @@
+{% extends'layout_visitor.html.twig' %}
+
+{% block body %}
+    <section class="container-fluid background_homepage">
+        <div class="container mt-5">
+            <div class="row text-center">
+
+                <div class="col-lg-6 mb-2">
+                    <img src="">
+                    <a href="{{ path ('app_index') }}"><button type="button" class="button">Visiteurs</button></a>
+
+                </div>
+
+                <div class="col-lg-6 mb-2">
+
+                    <a href="{{ path ('app_login') }}"><button type="button" class="button">Adhérents
+                    </button></a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}
